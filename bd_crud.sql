@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-05-2024 a las 18:47:09
+-- Tiempo de generación: 31-05-2024 a las 18:35:49
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `persona` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) NOT NULL,
   `apellido` varchar(100) NOT NULL,
   `dni` varchar(8) NOT NULL,
@@ -42,8 +42,7 @@ CREATE TABLE `persona` (
 --
 
 INSERT INTO `persona` (`id`, `nombre`, `apellido`, `dni`, `nacimiento`, `correo`, `telefono`) VALUES
-(9, 'luis', 'miguel', '56789890', '2024-05-14', 'miguel7@gmail.com', '909878987'),
-(22, 'Luis', 'Allcca', '70420178', '2024-05-01', 'samsung@gmail.com', '931733670');
+(29, 'Luis', 'Allcca', '45678907', '2007-07-04', 'otroempresa@gmail.com', '931733670');
 
 --
 -- Índices para tablas volcadas
@@ -63,7 +62,7 @@ ALTER TABLE `persona`
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
